@@ -21,11 +21,13 @@ body{
 
 .container {
     color: rgb(245, 241, 241);
-    background-color: var(--coffee-dark-gray);
+    background-color: var(--coffee-dark);
     position: relative;
     top: 9px;
     padding-top: 13px;
-    height: 20px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    height: 30px;
     width: 100%;
     padding-bottom: 40px;
     padding-right: 23px;
@@ -67,21 +69,23 @@ ul{
 
 /*right side customization for the welcome message*/
 .right-side{
-   background-color: color-mix(in srgb, var(--coffee-dark-gray), transparent 40%); 
-   border-radius: 40px;
-   padding: 2px;
-   margin-top: 20px;
+   background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 2%); 
+   border-radius: 10px;
+   padding: 38px;
+   margin-top: -38px;
    margin-right: 10px;
-   right: -10px;
-   top: 0;
-   z-index: 3;
+   right: 10px;
+   top: 1px;
+   z-index: 10px;
    text-align: center;
+   justify-content: center;
+   position: relative;
    color: azure;
    font-family: 'Courier New', Courier, monospace;
    font-size: 20px;
    top: 100px;
-   filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
-   height: 60px;
+   filter: drop-shadow(0 0 16px var(--coffee-dark-gray));
+   height: 30px;
    width: 100%;
    
    
@@ -96,7 +100,7 @@ ul{
     padding-top: -19px;
     padding-left: 23px;
     text-shadow: 23px 23px 1px black;
-   
+    filter: drop-shadow(0 0 16px var(--coffee-dark-gray));
 
   
 }

@@ -102,7 +102,7 @@ body{
 
 /*right side customization for the welcome message*/
 .right-side{
-   background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 30%); 
+   background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 10%); 
    border-radius: 40px;
    padding: 2px;
    margin-top: 20px;
@@ -118,6 +118,4 @@ body{
    filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
    height: 200px;
    width: 100%;
-   
-   
 }
