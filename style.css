@@ -1,0 +1,123 @@
+/*navbar customization*/
+
+:root {
+    --coffee-dark: #171311;
+    --coffee-dark-gray: #080808;
+    --coffee-panel: rgba(23, 19, 17, 0.88);
+    --coffee-light: #fff8ed;
+    --coffee-muted: #d8c8b5;
+    --coffee-accent: #e1a45f;
+    --coffee-accent-dark: #9e5d2e;
+    --content-width: 1100px;
+}
+
+.container {
+    color: rgb(245, 241, 241);
+    background-color: var(--coffee-dark);
+    position: relative;
+    top: 9px;
+    padding-top: 13px;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-right: 23px;
+    margin-top: -20px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 30px;
+
+}
+
+a{
+    color: rgb(252, 240, 250);
+    text-decoration-line: none;
+    justify-content: center;
+    font-size: large;
+}
+
+a:hover{
+    color:var(--coffee-accent-dark);
+    filter: drop-shadow(1px 0 26px var(--coffee-accent));
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    gap: 80px ;
+}
+
+.left-side{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: azure;
+    top: 11px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+
+body{
+    background:url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;   
+}
+
+.motto{
+    font-family:'Courier New', Courier, monospace;
+    color: azure;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 33px;
+}
+
+.logo{
+    position: relative;
+    top: -56px;
+    padding-top: -19px;
+    padding-left: 23px;
+    text-shadow: 23px 23px 1px black;
+   
+
+  
+}
+
+
+
+/*right side customization for the welcome message*/
+.right-side{
+   background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 30%); 
+   border-radius: 40px;
+   padding: 2px;
+   margin-top: 20px;
+   margin-right: 10px;
+   right: -10px;
+   top: 0;
+   z-index: 3;
+   text-align: center;
+   color: azure;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+   top: 100px;
+   filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
+   height: 200px;
+   width: 100%;
+   
+   
+}
