@@ -1,1 +1,1 @@
-this is portfolio of my projects that are to come 
+Hello if your reading this I'm making a portfolio 
