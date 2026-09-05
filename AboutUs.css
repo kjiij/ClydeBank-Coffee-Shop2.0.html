@@ -70,20 +70,17 @@ ul{
 /*right side customization for the welcome message*/
 .right-side{
    background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 10% );
-   border-radius: 10px;
-   position:static;
-   padding:38px;
-   margin-top: -38px;
+   border-radius: 40px;
+   padding:2px;
+   margin-top: 20px;
    margin-right: 10px;
-   right:10px;
+   right:-10px;
    top: 0;
    z-index: 3;
    text-align: center;
-   justify-content: center;
-   position: relative;
    color: azure;
    font-family: 'Courier New', Courier, monospace;
-   font-size: 30px;
+   font-size: 20px;
    top: 100px;
    filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
    height: 200px;
