@@ -106,89 +106,32 @@ ul{
 }
 
 /*card content styling*/
-/* 1. Global Reset & Body Setup */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures padding doesn't break target sizing */
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color:#f6a064;
+    align-items: center;
+   filter: drop-shadow(0 0 16px var(--coffee-accent-dark),transparent 20%);
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 160, 7);
+    padding: 20px;
+    margin: 20px;
+    width: 1499px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.content-card{
+    background-color: color-mix(in srgb, var(--coffee-dark-glow), transparent 10%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7f6;
-  color: #333;
-  padding: 40px 20px;
-}
-
-/* 2. Grid Container Layout */
-.card-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  /* Automatically wraps cards to new rows as viewport narrows */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 20px 0;
-}
-
-/* 3. Individual Card Component Styling */
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  overflow: hidden; /* Clips the top edges of the image to the card's border radius */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft background shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Fluid mouseover effect */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Hover Interaction Animation */
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-/* Card Visual Element */
-.about-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover; /* Prevents image distortion */
-}
-
-/* Typography Container */
-.card-content {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* Pushes buttons to line up horizontally if text lengths vary */
-}
-
-.card-heading {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-  color: #1a252c;
-}
-
-.card-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #606f7b;
-  margin-bottom: 25px;
-}
-
-/* Call-to-Action Button Button styling */
-.card-btn {
-  align-self: flex-start; /* Keeps the button element tight to its text length */
-  text-decoration: none;
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background-color 0.2s ease;
-}
-
-.card-btn:hover {
-  background-color: #0056b3;
+card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(181, 0, 0);
 }
