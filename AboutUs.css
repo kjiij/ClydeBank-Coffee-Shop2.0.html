@@ -11,7 +11,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.800) url("images/background.jpg"));
+    background: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -72,7 +72,7 @@ ul{
 
 /*right side customization for the welcome message*/
 .right-side{
-   background-color: color-mix (in srgb, var(--coffee-accent-dark) transparent 10% );
+   background-color: var(--coffee-accent-dark);
    border-radius: 40px;
    padding:2px;
    margin-top: 20px;
@@ -101,10 +101,8 @@ ul{
 
 .logo{
     position: relative;
-    top: -56px;
+    top: -53px;
     padding-top: -19px;
-    width: 81px;
-    height: 81px;
     padding-left: 23px;
     text-shadow: 23px 23px 1px black;
     filter: brightness(100%) drop-shadow(0 0 16px var(--coffee-accent-dark));
@@ -115,7 +113,8 @@ ul{
 /*card content styling*/
 
 .card-container{
-    background-color: #575554;
+    background-color: #ecad8e;
+    background-size: linear-gradient(to right, #ecad8e, #f5e0d3);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -135,9 +134,12 @@ ul{
     /*this is to edit the background of each individual card */
     background-color: white;
     padding: 0;
-    padding-right: 81px;
-    padding-left: 79px;
+    padding-right: 31px;
+    padding-left: 31px;
     height: 100%;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     /*and this part of the each card is for the glow for border radius of the each card*/
     
 
@@ -149,24 +151,30 @@ ul{
 .card-2{
     background-color: white;
     padding: 0;
-    padding-right: 81px;
-    padding-left: 79px;
+    padding-right: 31px;
+    padding-left: 31px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 100%;
+    border-radius: 40px;
 }
 
 .card-3{
     background-color: white;
     padding: 0;
-    padding-right: 81px;
-    padding-left: 79px;
+    padding-right: 31px;
+    padding-left: 31px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 100%;
+    border-radius: 40px;
 }
 /*making the customized buttons for the links*/
 .card-btn{
     background-color: #2b2826;
     padding: 0;
-    padding-left: 81px; 
-    padding-right:79px;
+    padding-left: 31px; 
+    padding-right:31px;
     border-radius: 40px;
 }
 
