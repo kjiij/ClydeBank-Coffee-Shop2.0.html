@@ -72,7 +72,7 @@ ul{
 
 /*right side customization for the welcome message*/
 .right-side{
-   background-color: color-mix(in srgb, var(--coffee-accent-dark), transparent 10% );
+   background-color: color-mix (in srgb, var(--coffee-accent-dark) transparent 10% );
    border-radius: 40px;
    padding:2px;
    margin-top: 20px;
@@ -135,7 +135,6 @@ ul{
     /*this is to edit the background of each individual card */
     background-color: white;
     padding: 0;
-    
     padding-right: 81px;
     padding-left: 79px;
     height: 100%;
