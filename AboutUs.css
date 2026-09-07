@@ -3,7 +3,7 @@
     --coffee-dark-gray: #2b2826;
     --coffee-panel: rgba(23, 19, 17, 0.88);
     --coffee-light: #fff8ed;
-    --coffee-muted: #d8c8b5;
+    --coffee-muted: #dcc1a1;
     --coffee-accent-glow: #e1a45fde;
     --coffee-accent-dark: #9e5d2e;
     --content-width: 1100px;
@@ -106,32 +106,205 @@ ul{
 }
 
 /*card content styling*/
-.card{
-    display: flex;
-    flex-direction: column;
+.card-1{
+    display: grid;
+    grid-template-columns: 2fr; /* Forces a single column layout */
+    gap: 90px;  
+    flex-direction: row; 
+    width: 100%; 
     background-color:#f6a064;
     align-items: center;
-   filter: drop-shadow(0 0 16px var(--coffee-accent-dark),transparent 20%);
+    filter: drop-shadow(0 0 16px var(--coffee-accent-dark),transparent 20%);
     justify-content: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(255, 160, 7);
+    box-shadow: 0 4px 8px rgba(234, 74, 74, 0.2);
     padding: 20px;
     margin: 20px;
     width: 1499px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .content-card{
-    background-color: color-mix(in srgb, var(--coffee-dark-glow), transparent 10%);
+    background-color: rgb(138, 90, 27);
     border-radius: 10px;
+    color: whitesmoke;
     padding: 20px;
     margin-top: 10px;
     text-align: center;
-    padding: 10px;
+    filter: drop-shadow(0 0 16px var(--coffee-dark)transparent 40%);
+    float: left;
+                /* Spacing between the rows */
 }
 
-card:hover {
+/*** Add a hover effect to the card */
+.card-1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgb(181, 0, 0);
+    box-shadow: 0 8px 16px rgb(154, 108, 0);
 }
+
+/* Style the heading and text inside the card */
+.card-heading {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+.card-btn {
+    background-color: var(--coffee-accent-glow);
+    color: var(--coffee-panel);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
