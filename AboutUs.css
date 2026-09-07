@@ -49,7 +49,7 @@ a{
 
 a:hover{
     color:var(--coffee-accent-red);
-    filter: drop-shadow(1px 0 26px var(--coffee-accent-dark));
+    filter: brightness(100%)(1px 0 26px var(--coffee-accent-dark));
  
     
 }
@@ -103,9 +103,11 @@ ul{
     position: relative;
     top: -56px;
     padding-top: -19px;
+    width: 81px;
+    height: 81px;
     padding-left: 23px;
     text-shadow: 23px 23px 1px black;
-    filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
+    filter: brightness(100%) drop-shadow(0 0 16px var(--coffee-accent-dark));
 
   
 }
