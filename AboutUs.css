@@ -6,6 +6,7 @@
     --coffee-muted: #dcc1a1;
     --coffee-accent-glow: #e1a45fde;
     --coffee-accent-dark: #9e5d2e;
+    --coffee-accent-red: rgb(250, 2, 2);
     --content-width: 1100px;
 }
 
@@ -35,7 +36,7 @@ body{
     text-align: center;
     list-style: none;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
 
 }
 
@@ -47,8 +48,10 @@ a{
 }
 
 a:hover{
-    color:var(--coffee-accent-dark);
+    color:var(--coffee-accent-red);
     filter: drop-shadow(1px 0 26px var(--coffee-accent-dark));
+ 
+    
 }
 
 li{
@@ -81,11 +84,13 @@ ul{
    justify-content: center;
    align-items: center;
    color: azure;
+   padding-top: 50px;
    font-family: 'Courier New', Courier, monospace;
    font-size: 20px;
    top: 100px;
    filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
    height: 200px;
+   gap: 60px;
    width: 100%;
    
    
@@ -106,74 +111,63 @@ ul{
 }
 
 /*card content styling*/
-.card-1{
-    display: grid;
-    grid-template-columns: 2fr; /* Forces a single column layout */
-    gap: 90px;  
-    flex-direction: row; 
-    width: 100%; 
-    background-color:#f6a064;
-    align-items: center;
-    filter: drop-shadow(0 0 16px var(--coffee-accent-dark),transparent 20%);
-    justify-content: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(234, 74, 74, 0.2);
-    padding: 20px;
-    margin: 20px;
-    width: 1499px;
-}
-.content-card{
-    background-color: rgb(138, 90, 27);
-    border-radius: 10px;
-    color: whitesmoke;
-    padding: 20px;
-    margin-top: 10px;
+
+.card-container{
+    background-color: #575554;
     text-align: center;
-    filter: drop-shadow(0 0 16px var(--coffee-dark)transparent 40%);
-    float: left;
-                /* Spacing between the rows */
-}
-
-/*** Add a hover effect to the card */
-.card-1:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgb(154, 108, 0);
-}
-
-/* Style the heading and text inside the card */
-.card-heading {
-    font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 10px;
-}
-.card-btn {
-    background-color: var(--coffee-accent-glow);
-    color: var(--coffee-panel);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: 0;
+    margin-top: 23px;
+    gap: 70px;
+    border-radius: 40px;
+    padding-top: 10px ;
+    height: 100%;
 }
 
 
 
+/*make the cards for each individual page */
+.card-1{
+    /*this is to edit the background of each individual card */
+    background-color: white;
+    padding: 0;
+    
+    padding-right: 81px;
+    padding-left: 79px;
+    height: 100%;
+    /*and this part of the each card is for the glow for border radius of the each card*/
+    
 
 
 
+}
 
 
+.card-2{
+    background-color: white;
+    padding: 0;
+    padding-right: 81px;
+    padding-left: 79px;
+    height: 100%;
+}
 
-
-
-
-
-
-
-
-
+.card-3{
+    background-color: white;
+    padding: 0;
+    padding-right: 81px;
+    padding-left: 79px;
+    height: 100%;
+}
+/*making the customized buttons for the links*/
+.card-btn{
+    background-color: #2b2826;
+    padding: 0;
+    padding-left: 81px; 
+    padding-right:79px;
+    border-radius: 40px;
+}
 
 
 
