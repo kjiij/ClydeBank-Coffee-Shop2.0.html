@@ -12,6 +12,17 @@
     --content-width: 1100px;
 }
 
+@keyframes navFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .container {
     color: rgb(245, 241, 241);
     background-color: var(--coffee-dark);
@@ -27,7 +38,14 @@
     list-style: none;
     text-decoration: none;
     border-radius: 30px;
+    animation: navFadeIn 600ms ease-out both;
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container {
+        animation: none;
+    }
 }
 
 a{

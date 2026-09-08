@@ -1,0 +1,75 @@
+// ClydeBank Coffee Shop 2.0 — central site data
+// JSONC (JSON with comments) — safe to edit, comments are ignored by parsers
+{
+  // Basic site info
+  "site": {
+    "name": "Clyde Bank Coffee Shop",
+    "tagline": "Finest coffee and pastries",
+    "logo": "images/logo.png",
+    "favicon": "images/logo.png",
+    "background": "images/background.jpg",
+    "language": "en"
+  },
+
+  // Navigation — matches Index.html / AboutUs.html / Contact.html
+  "navigation": [
+    { "label": "Home", "href": "Index.html" },
+    { "label": "Projects", "href": "AboutUs.html" },
+    { "label": "Contact", "href": "Contact.html" }
+  ],
+
+  // Home hero — matches Index.html .right-side
+  "hero": {
+    "heading": "WELCOME MY PORFOLIO!",
+    "text": "We are glad to have you here. Explore our content and learn more about what we do.",
+    "page": "Index.html"
+  },
+
+  // Projects section — matches AboutUs.html .card-container cards
+  "projects": [
+    {
+      "id": "card-1",
+      "heading": "Porfolio project",
+      "text": "Welcome to Clyde Bank Coffee Shop, where we serve the finest coffee and pastries",
+      "button": { "label": "see more", "href": "#" }
+    },
+    {
+      "id": "card-2",
+      "heading": "My Work",
+      "text": "Welcome to Clyde Bank Coffee Shop, where we serve the finest coffee and pastries",
+      "button": { "label": "For more Videos and photography", "href": "#" }
+    },
+    {
+      "id": "card-3",
+      "heading": "My Work",
+      "text": "Welcome to Clyde Bank Coffee Shop, where we serve the finest coffee and pastries",
+      "button": { "label": "read more", "href": "#" }
+    }
+  ],
+
+  // Contact page — matches Contact.html .left-side
+  "contact": {
+    "heading": "Contact Us",
+    "page": "Contact.html"
+  },
+
+  // Theme — mirrors AboutUs.css :root variables + gradients
+  "theme": {
+    "colors": {
+      "coffee-dark": "#171311",
+      "coffee-dark-gray": "#2b2826",
+      "coffee-panel": "rgba(23, 19, 17, 0.88)",
+      "coffee-light": "#fff8ed",
+      "coffee-muted": "#dcc1a1",
+      "coffee-accent-glow": "#e1a45fde",
+      "coffee-accent-dark": "#9e5d2e",
+      "coffee-accent-red": "rgb(250, 2, 2)"
+    },
+    "gradients": {
+      "card-container": "linear-gradient(to right, #ecad8e, #f5e0d3)",
+      "right-side": "linear-gradient(to right, var(--coffee-accent-dark), var(--coffee-accent-glow))",
+      "card": "linear-gradient(to right, #ffffff, #f5e0d3)",
+      "card-btn": "linear-gradient(to right, #2b2826, var(--coffee-accent-dark))"
+    }
+  }
+}
