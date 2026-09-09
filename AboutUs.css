@@ -22,17 +22,19 @@
 }
 
 body{
-    background: url("images/background.jpg");
+    background-color: #2b2826;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;   
+    font-size: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 .container {
-    color: rgb(245, 241, 241);
+    color: rgb(0, 0, 0);
     background-color: var(--coffee-dark);
     position: relative;
     top: 9px;
@@ -41,9 +43,10 @@ body{
     padding-left: 23px;
     height: 30px;
     width: 100%;
+    filter: brightness(100%) drop-shadow(0 0 16px var(--coffee-accent-dark));
     padding-bottom: 40px;
-    padding-right: 23px;
-    margin-top: -20px;
+    padding-right:  23px;
+    margin-top: 20px;
     text-align: center;
     list-style: none;
     text-decoration: none;
@@ -91,6 +94,7 @@ ul{
 /*right side customization for the welcome message - glass style*/
 .right-side{
    position: relative;
+   color: rgb(0, 0, 0);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -98,12 +102,12 @@ ul{
    gap: 12px;
    box-sizing: border-box;
    background-color: drop-shadow(0 0 16px var(--coffee-accent-dark));
-   background-image: linear-gradient(to right, rgba(144, 56, 5, 0.45), rgba(252, 161, 14, 0.482));
+   background-image: linear-gradient(to right, rgba(195, 74, 4, 0.774), rgba(252, 161, 14, 0.482));
    -webkit-backdrop-filter: blur(14px) saturate(160%);
    backdrop-filter: blur(24px) saturate(16%);
    -webkit-background-clip: padding-box;
    background-clip: padding-box;
-   border: 1px solid rgba(255, 248, 237, 0.35);
+   border: 1px solid rgba(243, 157, 18, 0.63);
    border-radius: 40px;
    padding: 50px 20px 30px;
    margin: 20px 10px 0 0;
@@ -111,7 +115,7 @@ ul{
    min-height: 200px;
    z-index: 3;
    text-align: center;
-   color: azure;
+   color: var(--coffee-light);
    font-family: 'Courier New', Courier, monospace;
    font-size: 20px;
    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
@@ -122,48 +126,39 @@ ul{
 
 
 
-.logo{
-    position: relative;
-    top: -53px;
-    padding-top: -19px;
-    padding-left: 23px;
-    text-shadow: 23px 23px 1px black;
-    filter: brightness(100%) drop-shadow(0 0 16px var(--coffee-accent-dark));
-
-  
-}
-
 /*card content styling*/
 
 .card-container{
-    background-color: #ecad8e;
-    background-image: linear-gradient(to right, #ecad8e, #f5e0d3);
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: auto;
-    margin: 0;
-    margin-top: 23px;
-    gap: 70px;
-    border-radius: 40px;
-    padding-top: 10px ;
-    height: 1000%;
+    gap: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: auto;
+    background-color: blur(24px);
 }
-
 
 
 /*make the cards for each individual page */
 .card-1{
     /*this is to edit the background of each individual card */
-    background-color: white;
-    background-image: linear-gradient(to right, #ffffff, #f5e0d3);
+    background-color: rgb(242, 2, 2);
     padding: 0;
     padding-right: 31px;
+    text-align: center;
     padding-left: 31px;
     height: 100%;
     border-radius: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    backdrop-filter: blur(24px) var(--coffee-accent-dark);
     /*and this part of the each card is for the glow for border radius of the each card*/
     
 
@@ -173,28 +168,28 @@ ul{
 
 
 .card-2{
-    background-color: white;
-    background-image: linear-gradient(to right, #ffffff, #f5e0d3);
+    background-color: var(--coffee-accent-dark);
     padding: 0;
-    padding-right: 31px;
+    padding-right: 13px;
+    text-align: center;
     padding-left: 31px;
     margin-left: 20px;
     margin-right: 20px;
+    color: #f3f1f1;
     height: 100%;
     border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: drop-shadow(0 0 16px var(--coffee-accent-dark));
+    background-image: linear-gradient(to right, rgba(144, 56, 5, 0.45), rgba(252, 161, 14, 0.482));
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    backdrop-filter: blur(24px) saturate(160%);
+    background-clip: padding-box;
+    box-sizing: border-box;
+    border: 1px solid #9e5d2e;
 }
 
-.card-3{
-    background-color: white;
-    background-image: linear-gradient(to right, #980707af, #845b42);
-    padding: 0;
-    padding-right: 31px;
-    padding-left: 31px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100%;
-    border-radius: 40px;
-}
+
 /*making the customized buttons for the links*/
 .card-btn{
     background-color: #2b2826;
@@ -211,7 +206,7 @@ ul{
     border-radius: 40px;
     color: white;
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 16px var(--coffee-accent-glow));
+    filter: drop-shadow(0 0 16px var(--coffee-accent-dark));
 }
 
 
