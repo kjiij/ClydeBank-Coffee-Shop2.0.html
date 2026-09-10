@@ -14,7 +14,13 @@
                 <span>Crow Design Interprises</span>
             </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="site-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="AboutUs.html">Projects</a></li>
@@ -28,6 +34,20 @@
         <section class="right-side">
             <h1>WELCOME TO CLYDE BANK COFFEE SHOP!</h1>
             <p>We are glad to have you here. Explore our content and learn more about what we do.</p>
+        </section>
+
+        <section class="cta-strip" aria-label="Call to action">
+            <div class="cta-card">
+                <h2>Freshly Brewed</h2>
+                <p>Enjoy handcrafted espresso, slow pours, and delicious pastries every day.</p>
+                <a href="AboutUs.html" class="cta-button">View Projects</a>
+            </div>
+
+            <div class="cta-card">
+                <h2>Plan Your Visit</h2>
+                <p>Stop by for a cozy break, a meeting, or a quiet moment with excellent coffee.</p>
+                <a href="Contact.html" class="cta-button">Contact Us</a>
+            </div>
         </section>
     </main>
 
@@ -54,6 +74,27 @@
         </div>
         <p class="copyright">© 2026 Clyde Bank Coffee Shop</p>
     </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        if (navToggle && mainNav) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = mainNav.classList.toggle('is-open');
+                navToggle.classList.toggle('is-active', isOpen);
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            mainNav.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('is-open');
+                    navToggle.classList.remove('is-active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
 
